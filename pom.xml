@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.example</groupId>
+	<artifactId>spring-data-geode-p2p-example</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<name>Spring Data for Apache Geode Peer-to-Peer (P2P) Example</name>
+	<description>
+		Example demonstrating a Apache Geode Peer-to-Peer (P2P) topology configured and bootstrapped with
+		Spring Data for Apache Geode (SDG) 2.7.5. Specifically, 2 Apache Geode Locators will be started with
+		Gfsh and 2 Apache Geode servers (regular Data Servers, not CacheServers) will be configured
+		and bootstrapped with Spring using SDG.
+	</description>
+
+	<properties>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
+		<apache-log4j.version>2.19.0</apache-log4j.version>
+		<logback.version>1.2.11</logback.version>
+		<spring-data-geode.version>2.7.5</spring-data-geode.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-geode</artifactId>
+			<version>${spring-data-geode.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-to-slf4j</artifactId>
+			<version>${apache-log4j.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>
