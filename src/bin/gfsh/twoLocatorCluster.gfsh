@@ -1,0 +1,5 @@
+#/bin/gfsh
+
+start locator --name=LocatorOne --port=11235
+start locator --name=LocatorTwo --port=12480
+list members
